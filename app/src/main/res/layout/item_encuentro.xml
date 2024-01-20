@@ -1,0 +1,43 @@
+<!-- res/layout/item_encuentro.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/numeroTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Encuentro #" />
+
+    <TextView
+        android:id="@+id/semanaTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Semana: " />
+
+    <TextView
+        android:id="@+id/personaje1TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Personaje 1: " />
+
+    <TextView
+        android:id="@+id/personaje2TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Personaje 2: " />
+
+    <TextView
+        android:id="@+id/puntuacion1TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Puntuación 1: " />
+
+    <TextView
+        android:id="@+id/puntuacion2TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Puntuación 2: " />
+</LinearLayout>

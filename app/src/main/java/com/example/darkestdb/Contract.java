@@ -1,3 +1,5 @@
+package com.example.darkestdb;
+
 import android.provider.BaseColumns;
 
 public final class Contract {
