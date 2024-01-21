@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_personajes"
+        android:title="Personajes" />
+
+    <item
+        android:id="@+id/navigation_encuentros"
+        android:title="Encuentros" />
+</menu>

@@ -8,6 +8,9 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.darkestdb.Personaje;
+import com.example.darkestdb.R;
+
 import java.util.List;
 
 public class PersonajeAdapter extends RecyclerView.Adapter<PersonajeAdapter.PersonajeViewHolder> {
@@ -34,6 +37,16 @@ public class PersonajeAdapter extends RecyclerView.Adapter<PersonajeAdapter.Pers
     @Override
     public int getItemCount() {
         return personajes.size();
+    }
+
+    public void clear() {
+        personajes.clear();
+        notifyDataSetChanged();
+    }
+
+    public void addAll(List<Personaje> newList) {
+        personajes.addAll(newList);
+        notifyDataSetChanged();
     }
 
     public static class PersonajeViewHolder extends RecyclerView.ViewHolder {

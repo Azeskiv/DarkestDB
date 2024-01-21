@@ -1,44 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/tvPersonajes"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Lista de Personajes:"
-        android:layout_marginTop="16dp"
-        android:layout_marginLeft="16dp"
-        android:textSize="18sp"/>
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomNavigationView"
+        android:layout_alignParentTop="true">
+        <!-- Contenedor para los fragmentos -->
+    </FrameLayout>
 
+    <!-- RecyclerView para Personajes -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerViewPersonajes"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/tvPersonajes"
-        android:layout_marginTop="8dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"/>
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomNavigationView"
+        android:layout_alignParentTop="true"
+        android:visibility="gone" />
 
-    <TextView
-        android:id="@+id/tvEncuentros"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Lista de Encuentros:"
-        android:layout_below="@id/recyclerViewPersonajes"
-        android:layout_marginTop="16dp"
-        android:layout_marginLeft="16dp"
-        android:textSize="18sp"/>
-
+    <!-- RecyclerView para Encuentros -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerViewEncuentros"
         android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomNavigationView"
+        android:layout_alignParentTop="true"
+        android:visibility="gone" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/tvEncuentros"
-        android:layout_marginTop="8dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"/>
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_navigation_menu" />
+
 </RelativeLayout>
