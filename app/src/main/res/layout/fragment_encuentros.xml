@@ -1,12 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#FFEB3B">
+
+    <TextView
+        android:id="@+id/titleTextViewEncuentros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#2196F3"
+        android:padding="8dp"
+        android:text="Encuentros"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerViewEncuentros"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="16dp" />
+        android:layout_below="@id/titleTextViewEncuentros"
+        android:layout_marginTop="8dp" />
 
 </RelativeLayout>

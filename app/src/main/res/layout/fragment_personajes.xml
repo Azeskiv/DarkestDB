@@ -1,12 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#5555">
+
+    <TextView
+        android:id="@+id/titleTextViewPersonajes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#4CAF50"
+        android:padding="8dp"
+        android:text="Personajes"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerViewPersonajes"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="16dp" />
+        android:layout_below="@id/titleTextViewPersonajes"
+        android:layout_marginTop="8dp" />
 
 </RelativeLayout>

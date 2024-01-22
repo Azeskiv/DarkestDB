@@ -1,9 +1,10 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/navigation_personajes"
-        android:title="Personajes" />
-
+        android:id="@+id/menu_personajes"
+        android:title="Personajes"
+        android:icon="@drawable/personajes" />
     <item
-        android:id="@+id/navigation_encuentros"
-        android:title="Encuentros" />
+        android:id="@+id/menu_encuentros"
+        android:title="Encuentros"
+        android:icon="@drawable/encuentros" />
 </menu>

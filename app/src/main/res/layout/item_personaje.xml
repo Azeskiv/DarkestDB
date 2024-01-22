@@ -1,25 +1,32 @@
-<!-- res/layout/item_personaje.xml -->
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<!-- item_personaje.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:padding="16dp">
+    android:orientation="vertical">
+
+    <!-- Agrega el ImageView con el id "imagenView" -->
+    <ImageView
+        android:id="@+id/imagenView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/caballero"
+        android:layout_gravity="center"/>
+
+    <!-- Otros elementos, como TextViews, pueden ir aquí -->
 
     <TextView
         android:id="@+id/nombreTextView"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Nombre: " />
+        android:layout_height="wrap_content"/>
 
     <TextView
         android:id="@+id/tipoTextView"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Tipo: " />
+        android:layout_height="wrap_content"/>
 
     <TextView
         android:id="@+id/nivelTextView"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Nivel: " />
+        android:layout_height="wrap_content"/>
 </LinearLayout>

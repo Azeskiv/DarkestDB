@@ -1,6 +1,7 @@
 package com.example.darkestdb;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,7 +20,8 @@ public class EncuentrosFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_encuentros, container, false);
-
+        Object fragment = new Object();
+        Log.d("MainActivity", "loadFragment: " + fragment.getClass().getSimpleName());
         // Configurar RecyclerView
         RecyclerView recyclerViewEncuentros = view.findViewById(R.id.recyclerViewEncuentros);
         recyclerViewEncuentros.setLayoutManager(new LinearLayoutManager(getContext()));
